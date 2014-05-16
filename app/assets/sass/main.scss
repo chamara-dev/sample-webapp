@@ -1,0 +1,40 @@
+
+$input_field:            #999;
+$input_focus:           #559ab9;
+$validation_passed:     #8aba56;
+$validation_failed:     #ba5656;
+$bg_colour:             #f4f4f4;
+$box_colour:            #fff;
+$border_style:          1px solid;
+$border_radius:         4px;
+
+input[type="text"] {
+  border-radius:      $border_radius;
+  border:             $border_style $input_field;
+  width:              60%;
+  padding:            5px;
+}
+
+input[type="password"] {
+  border-radius:      $border_radius;
+  border:             $border_style $input_field;
+  width:              60%;
+  padding:            5px;
+}
+
+//Define a variable
+$loginBackgroundColour:#aaaaaa;
+$labelTestColor:#FF0000;
+
+$button_width : 60%;
+
+.login_bg {
+  color: $labelTestColor;
+  background:$loginBackgroundColour;
+  width:100%;
+}
+
+.button{
+  width : $button_width;
+}
+

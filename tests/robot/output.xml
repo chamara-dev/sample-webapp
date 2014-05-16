@@ -1,0 +1,1085 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20140507 17:29:23.561" generator="Robot 2.8.4 (Python 2.7.5 on darwin)">
+<suite source="/Volumes/Data/DirectFN-MobileWeb/source/DirectFNApp/tests/robot/login_screen" id="s1" name="Login Screen">
+<suite source="/Volumes/Data/DirectFN-MobileWeb/source/DirectFNApp/tests/robot/login_screen/gherkin_login.txt" id="s1-s1" name="Gherkin Login">
+<test id="s1-s1-t1" name="Valid Login">
+<kw type="kw" name="Given browser is opened to login page">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="resource.Open Browser To Login Page">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20140507 17:29:24.336" level="INFO">Opening browser 'Firefox' to base url 'http://localhost:9000/'</msg>
+<status status="PASS" endtime="20140507 17:29:33.383" starttime="20140507 17:29:24.335"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Maximize Browser Window">
+<doc>Maximizes current browser window.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140507 17:29:33.999" starttime="20140507 17:29:33.384"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Set Selenium Speed">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20140507 17:29:33.999" starttime="20140507 17:29:33.999"></status>
+</kw>
+<kw type="kw" name="resource.Login Page Should Be Open">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Title Should Be">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>DirectFN-HTML5</arg>
+</arguments>
+<msg timestamp="20140507 17:29:34.007" level="INFO">Page title is 'DirectFN-HTML5'.</msg>
+<status status="PASS" endtime="20140507 17:29:34.007" starttime="20140507 17:29:34.001"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:34.007" starttime="20140507 17:29:34.000"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:34.007" starttime="20140507 17:29:24.335"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:34.007" starttime="20140507 17:29:24.334"></status>
+</kw>
+<kw type="kw" name="When user &quot;demo&quot; logs in with password &quot;mode&quot;">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="resource.Input Username">
+<doc></doc>
+<arguments>
+<arg>${username}</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>username</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20140507 17:29:34.010" level="INFO">Typing text 'demo' into text field 'username'</msg>
+<status status="PASS" endtime="20140507 17:29:34.604" starttime="20140507 17:29:34.009"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:34.604" starttime="20140507 17:29:34.009"></status>
+</kw>
+<kw type="kw" name="resource.Input Password">
+<doc></doc>
+<arguments>
+<arg>${password}</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>password</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20140507 17:29:34.606" level="INFO">Typing text 'mode' into text field 'password'</msg>
+<status status="PASS" endtime="20140507 17:29:34.890" starttime="20140507 17:29:34.605"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:34.890" starttime="20140507 17:29:34.605"></status>
+</kw>
+<kw type="kw" name="resource.Submit Credentials">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>login</arg>
+</arguments>
+<msg timestamp="20140507 17:29:34.891" level="INFO">Clicking button 'login'.</msg>
+<status status="PASS" endtime="20140507 17:29:35.600" starttime="20140507 17:29:34.891"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:35.600" starttime="20140507 17:29:34.890"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:35.600" starttime="20140507 17:29:34.008"></status>
+</kw>
+<kw type="kw" name="resource.Then welcome page should be open">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Title Should Be">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Market Summary</arg>
+</arguments>
+<msg timestamp="20140507 17:29:35.612" level="INFO">Page title is 'Market Summary'.</msg>
+<status status="PASS" endtime="20140507 17:29:35.612" starttime="20140507 17:29:35.602"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:35.612" starttime="20140507 17:29:35.601"></status>
+</kw>
+<kw type="teardown" name="Selenium2Library.Close Browser">
+<doc>Closes the current browser.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140507 17:29:35.648" starttime="20140507 17:29:35.613"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140507 17:29:35.648" critical="yes" starttime="20140507 17:29:24.333"></status>
+</test>
+<doc>A test suite with a single Gherkin style test.
+
+This test is functionally identical to the example in
+valid_login.txt file.</doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20140507 17:29:35.649" starttime="20140507 17:29:23.667"></status>
+</suite>
+<suite source="/Volumes/Data/DirectFN-MobileWeb/source/DirectFNApp/tests/robot/login_screen/invalid_login.txt" id="s1-s2" name="Invalid Login">
+<kw type="setup" name="resource.Open Browser To Login Page">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20140507 17:29:35.657" level="INFO">Opening browser 'Firefox' to base url 'http://localhost:9000/'</msg>
+<status status="PASS" endtime="20140507 17:29:40.029" starttime="20140507 17:29:35.657"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Maximize Browser Window">
+<doc>Maximizes current browser window.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140507 17:29:40.428" starttime="20140507 17:29:40.030"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Set Selenium Speed">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20140507 17:29:40.429" starttime="20140507 17:29:40.428"></status>
+</kw>
+<kw type="kw" name="resource.Login Page Should Be Open">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Title Should Be">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>DirectFN-HTML5</arg>
+</arguments>
+<msg timestamp="20140507 17:29:40.436" level="INFO">Page title is 'DirectFN-HTML5'.</msg>
+<status status="PASS" endtime="20140507 17:29:40.436" starttime="20140507 17:29:40.429"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:40.437" starttime="20140507 17:29:40.429"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:40.437" starttime="20140507 17:29:35.656"></status>
+</kw>
+<test id="s1-s2-t1" name="Invalid Username">
+<kw type="setup" name="resource.Go To Login Page">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Go To">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+</arguments>
+<msg timestamp="20140507 17:29:40.438" level="INFO">Opening url 'http://localhost:9000/'</msg>
+<status status="PASS" endtime="20140507 17:29:40.650" starttime="20140507 17:29:40.438"></status>
+</kw>
+<kw type="kw" name="resource.Login Page Should Be Open">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Title Should Be">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>DirectFN-HTML5</arg>
+</arguments>
+<msg timestamp="20140507 17:29:40.656" level="INFO">Page title is 'DirectFN-HTML5'.</msg>
+<status status="PASS" endtime="20140507 17:29:40.656" starttime="20140507 17:29:40.651"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:40.656" starttime="20140507 17:29:40.650"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:40.657" starttime="20140507 17:29:40.438"></status>
+</kw>
+<kw type="kw" name="Login With Invalid Credentials Should Fail">
+<doc></doc>
+<arguments>
+<arg>invalid</arg>
+<arg>${VALID PASSWORD}</arg>
+</arguments>
+<kw type="kw" name="resource.Input Username">
+<doc></doc>
+<arguments>
+<arg>${username}</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>username</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20140507 17:29:40.658" level="INFO">Typing text 'invalid' into text field 'username'</msg>
+<status status="PASS" endtime="20140507 17:29:40.779" starttime="20140507 17:29:40.658"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:40.779" starttime="20140507 17:29:40.657"></status>
+</kw>
+<kw type="kw" name="resource.Input Password">
+<doc></doc>
+<arguments>
+<arg>${password}</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>password</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20140507 17:29:40.780" level="INFO">Typing text 'mode' into text field 'password'</msg>
+<status status="PASS" endtime="20140507 17:29:40.844" starttime="20140507 17:29:40.780"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:40.845" starttime="20140507 17:29:40.779"></status>
+</kw>
+<kw type="kw" name="resource.Submit Credentials">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>login</arg>
+</arguments>
+<msg timestamp="20140507 17:29:40.846" level="INFO">Clicking button 'login'.</msg>
+<status status="PASS" endtime="20140507 17:29:40.920" starttime="20140507 17:29:40.846"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:40.920" starttime="20140507 17:29:40.845"></status>
+</kw>
+<kw type="kw" name="Login Should Have Failed">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Title Should Be">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Error Page</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+</arguments>
+<msg timestamp="20140507 17:29:41.098" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20140507 17:29:41.098" starttime="20140507 17:29:40.928"></status>
+</kw>
+<msg timestamp="20140507 17:29:41.148" level="FAIL">Title should have been 'Error Page' but was 'Market Summary'</msg>
+<status status="FAIL" endtime="20140507 17:29:41.148" starttime="20140507 17:29:40.921"></status>
+</kw>
+<status status="FAIL" endtime="20140507 17:29:41.148" starttime="20140507 17:29:40.920"></status>
+</kw>
+<status status="FAIL" endtime="20140507 17:29:41.149" starttime="20140507 17:29:40.657"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140507 17:29:41.149" critical="yes" starttime="20140507 17:29:40.437">Title should have been 'Error Page' but was 'Market Summary'</status>
+</test>
+<test id="s1-s2-t2" name="Invalid Password">
+<kw type="setup" name="resource.Go To Login Page">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Go To">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+</arguments>
+<msg timestamp="20140507 17:29:41.152" level="INFO">Opening url 'http://localhost:9000/'</msg>
+<status status="PASS" endtime="20140507 17:29:41.393" starttime="20140507 17:29:41.151"></status>
+</kw>
+<kw type="kw" name="resource.Login Page Should Be Open">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Title Should Be">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>DirectFN-HTML5</arg>
+</arguments>
+<msg timestamp="20140507 17:29:41.400" level="INFO">Page title is 'DirectFN-HTML5'.</msg>
+<status status="PASS" endtime="20140507 17:29:41.400" starttime="20140507 17:29:41.394"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:41.401" starttime="20140507 17:29:41.393"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:41.401" starttime="20140507 17:29:41.150"></status>
+</kw>
+<kw type="kw" name="Login With Invalid Credentials Should Fail">
+<doc></doc>
+<arguments>
+<arg>${VALID USER}</arg>
+<arg>invalid</arg>
+</arguments>
+<kw type="kw" name="resource.Input Username">
+<doc></doc>
+<arguments>
+<arg>${username}</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>username</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20140507 17:29:41.403" level="INFO">Typing text 'demo' into text field 'username'</msg>
+<status status="PASS" endtime="20140507 17:29:41.460" starttime="20140507 17:29:41.402"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:41.461" starttime="20140507 17:29:41.402"></status>
+</kw>
+<kw type="kw" name="resource.Input Password">
+<doc></doc>
+<arguments>
+<arg>${password}</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>password</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20140507 17:29:41.462" level="INFO">Typing text 'invalid' into text field 'password'</msg>
+<status status="PASS" endtime="20140507 17:29:41.535" starttime="20140507 17:29:41.461"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:41.535" starttime="20140507 17:29:41.461"></status>
+</kw>
+<kw type="kw" name="resource.Submit Credentials">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>login</arg>
+</arguments>
+<msg timestamp="20140507 17:29:41.536" level="INFO">Clicking button 'login'.</msg>
+<status status="PASS" endtime="20140507 17:29:41.613" starttime="20140507 17:29:41.536"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:41.613" starttime="20140507 17:29:41.536"></status>
+</kw>
+<kw type="kw" name="Login Should Have Failed">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Title Should Be">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Error Page</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+</arguments>
+<msg timestamp="20140507 17:29:41.674" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20140507 17:29:41.674" starttime="20140507 17:29:41.619"></status>
+</kw>
+<msg timestamp="20140507 17:29:41.674" level="FAIL">Title should have been 'Error Page' but was 'Market Summary'</msg>
+<status status="FAIL" endtime="20140507 17:29:41.674" starttime="20140507 17:29:41.614"></status>
+</kw>
+<status status="FAIL" endtime="20140507 17:29:41.675" starttime="20140507 17:29:41.613"></status>
+</kw>
+<status status="FAIL" endtime="20140507 17:29:41.675" starttime="20140507 17:29:41.401"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140507 17:29:41.675" critical="yes" starttime="20140507 17:29:41.150">Title should have been 'Error Page' but was 'Market Summary'</status>
+</test>
+<test id="s1-s2-t3" name="Invalid Username And Password">
+<kw type="setup" name="resource.Go To Login Page">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Go To">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+</arguments>
+<msg timestamp="20140507 17:29:41.678" level="INFO">Opening url 'http://localhost:9000/'</msg>
+<status status="PASS" endtime="20140507 17:29:41.885" starttime="20140507 17:29:41.677"></status>
+</kw>
+<kw type="kw" name="resource.Login Page Should Be Open">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Title Should Be">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>DirectFN-HTML5</arg>
+</arguments>
+<msg timestamp="20140507 17:29:41.892" level="INFO">Page title is 'DirectFN-HTML5'.</msg>
+<status status="PASS" endtime="20140507 17:29:41.892" starttime="20140507 17:29:41.886"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:41.892" starttime="20140507 17:29:41.885"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:41.892" starttime="20140507 17:29:41.677"></status>
+</kw>
+<kw type="kw" name="Login With Invalid Credentials Should Fail">
+<doc></doc>
+<arguments>
+<arg>invalid</arg>
+<arg>whatever</arg>
+</arguments>
+<kw type="kw" name="resource.Input Username">
+<doc></doc>
+<arguments>
+<arg>${username}</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>username</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20140507 17:29:41.894" level="INFO">Typing text 'invalid' into text field 'username'</msg>
+<status status="PASS" endtime="20140507 17:29:41.962" starttime="20140507 17:29:41.893"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:41.962" starttime="20140507 17:29:41.893"></status>
+</kw>
+<kw type="kw" name="resource.Input Password">
+<doc></doc>
+<arguments>
+<arg>${password}</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>password</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20140507 17:29:41.963" level="INFO">Typing text 'whatever' into text field 'password'</msg>
+<status status="PASS" endtime="20140507 17:29:42.060" starttime="20140507 17:29:41.963"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:42.060" starttime="20140507 17:29:41.962"></status>
+</kw>
+<kw type="kw" name="resource.Submit Credentials">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>login</arg>
+</arguments>
+<msg timestamp="20140507 17:29:42.061" level="INFO">Clicking button 'login'.</msg>
+<status status="PASS" endtime="20140507 17:29:42.138" starttime="20140507 17:29:42.061"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:42.139" starttime="20140507 17:29:42.061"></status>
+</kw>
+<kw type="kw" name="Login Should Have Failed">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Title Should Be">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Error Page</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+</arguments>
+<msg timestamp="20140507 17:29:42.199" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20140507 17:29:42.199" starttime="20140507 17:29:42.146"></status>
+</kw>
+<msg timestamp="20140507 17:29:42.199" level="FAIL">Title should have been 'Error Page' but was 'Market Summary'</msg>
+<status status="FAIL" endtime="20140507 17:29:42.199" starttime="20140507 17:29:42.140"></status>
+</kw>
+<status status="FAIL" endtime="20140507 17:29:42.200" starttime="20140507 17:29:42.139"></status>
+</kw>
+<status status="FAIL" endtime="20140507 17:29:42.200" starttime="20140507 17:29:41.892"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140507 17:29:42.200" critical="yes" starttime="20140507 17:29:41.676">Title should have been 'Error Page' but was 'Market Summary'</status>
+</test>
+<test id="s1-s2-t4" name="Empty Username">
+<kw type="setup" name="resource.Go To Login Page">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Go To">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+</arguments>
+<msg timestamp="20140507 17:29:42.202" level="INFO">Opening url 'http://localhost:9000/'</msg>
+<status status="PASS" endtime="20140507 17:29:42.390" starttime="20140507 17:29:42.202"></status>
+</kw>
+<kw type="kw" name="resource.Login Page Should Be Open">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Title Should Be">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>DirectFN-HTML5</arg>
+</arguments>
+<msg timestamp="20140507 17:29:42.404" level="INFO">Page title is 'DirectFN-HTML5'.</msg>
+<status status="PASS" endtime="20140507 17:29:42.404" starttime="20140507 17:29:42.391"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:42.404" starttime="20140507 17:29:42.390"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:42.404" starttime="20140507 17:29:42.201"></status>
+</kw>
+<kw type="kw" name="Login With Invalid Credentials Should Fail">
+<doc></doc>
+<arguments>
+<arg>${EMPTY}</arg>
+<arg>${VALID PASSWORD}</arg>
+</arguments>
+<kw type="kw" name="resource.Input Username">
+<doc></doc>
+<arguments>
+<arg>${username}</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>username</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20140507 17:29:42.406" level="INFO">Typing text '' into text field 'username'</msg>
+<status status="PASS" endtime="20140507 17:29:42.446" starttime="20140507 17:29:42.406"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:42.446" starttime="20140507 17:29:42.405"></status>
+</kw>
+<kw type="kw" name="resource.Input Password">
+<doc></doc>
+<arguments>
+<arg>${password}</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>password</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20140507 17:29:42.448" level="INFO">Typing text 'mode' into text field 'password'</msg>
+<status status="PASS" endtime="20140507 17:29:42.514" starttime="20140507 17:29:42.447"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:42.514" starttime="20140507 17:29:42.446"></status>
+</kw>
+<kw type="kw" name="resource.Submit Credentials">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>login</arg>
+</arguments>
+<msg timestamp="20140507 17:29:42.515" level="INFO">Clicking button 'login'.</msg>
+<status status="PASS" endtime="20140507 17:29:43.456" starttime="20140507 17:29:42.515"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:43.456" starttime="20140507 17:29:42.514"></status>
+</kw>
+<kw type="kw" name="Login Should Have Failed">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Title Should Be">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Error Page</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+</arguments>
+<msg timestamp="20140507 17:29:43.840" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20140507 17:29:43.840" starttime="20140507 17:29:43.756"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+</arguments>
+<msg timestamp="20140507 17:29:43.891" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20140507 17:29:43.891" starttime="20140507 17:29:43.840"></status>
+</kw>
+<msg timestamp="20140507 17:29:43.949" level="FAIL">UnexpectedAlertPresentException: Message: u'Modal dialog present' ; Stacktrace: 
+    at nsCommandProcessor.prototype.execute (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command_processor.js:10949)
+    at Dispatcher.executeAs/&lt; (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver_component.js:7717)
+    at Resource.prototype.handle (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver_component.js:7864)
+    at Dispatcher.prototype.dispatch (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver_component.js:7811)
+    at WebDriverServer/&lt;.handle (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver_component.js:10740)
+    at createHandlerFunc/&lt; (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1935)
+    at ServerHandler.prototype.handleResponse (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:2261)
+    at Connection.prototype.process (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1168)
+    at RequestReader.prototype._handleResponse (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1616)
+    at RequestReader.prototype._processBody (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1464)
+    at RequestReader.prototype.onInputStreamReady (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1333) </msg>
+<status status="FAIL" endtime="20140507 17:29:43.949" starttime="20140507 17:29:43.457"></status>
+</kw>
+<status status="FAIL" endtime="20140507 17:29:43.949" starttime="20140507 17:29:43.456"></status>
+</kw>
+<status status="FAIL" endtime="20140507 17:29:43.950" starttime="20140507 17:29:42.404"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140507 17:29:43.950" critical="yes" starttime="20140507 17:29:42.200">UnexpectedAlertPresentException: Message: u'Modal dialog present' ; Stacktrace: 
+    at nsCommandProcessor.prototype.execute (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command_processor.js:10949)
+    at Dispatcher.executeAs/&lt; (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver_component.js:7717)
+    at Resource.prototype.handle (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver_component.js:7864)
+    at Dispatcher.prototype.dispatch (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver_component.js:7811)
+    at WebDriverServer/&lt;.handle (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver_component.js:10740)
+    at createHandlerFunc/&lt; (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1935)
+    at ServerHandler.prototype.handleResponse (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:2261)
+    at Connection.prototype.process (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1168)
+    at RequestReader.prototype._handleResponse (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1616)
+    at RequestReader.prototype._processBody (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1464)
+    at RequestReader.prototype.onInputStreamReady (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1333) </status>
+</test>
+<test id="s1-s2-t5" name="Empty Password">
+<kw type="setup" name="resource.Go To Login Page">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Go To">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+</arguments>
+<msg timestamp="20140507 17:29:43.952" level="INFO">Opening url 'http://localhost:9000/'</msg>
+<status status="PASS" endtime="20140507 17:29:44.151" starttime="20140507 17:29:43.952"></status>
+</kw>
+<kw type="kw" name="resource.Login Page Should Be Open">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Title Should Be">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>DirectFN-HTML5</arg>
+</arguments>
+<msg timestamp="20140507 17:29:44.170" level="INFO">Page title is 'DirectFN-HTML5'.</msg>
+<status status="PASS" endtime="20140507 17:29:44.170" starttime="20140507 17:29:44.152"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:44.170" starttime="20140507 17:29:44.151"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:44.170" starttime="20140507 17:29:43.951"></status>
+</kw>
+<kw type="kw" name="Login With Invalid Credentials Should Fail">
+<doc></doc>
+<arguments>
+<arg>${VALID USER}</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<kw type="kw" name="resource.Input Username">
+<doc></doc>
+<arguments>
+<arg>${username}</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>username</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20140507 17:29:44.172" level="INFO">Typing text 'demo' into text field 'username'</msg>
+<status status="PASS" endtime="20140507 17:29:44.231" starttime="20140507 17:29:44.172"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:44.231" starttime="20140507 17:29:44.171"></status>
+</kw>
+<kw type="kw" name="resource.Input Password">
+<doc></doc>
+<arguments>
+<arg>${password}</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>password</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20140507 17:29:44.233" level="INFO">Typing text '' into text field 'password'</msg>
+<status status="PASS" endtime="20140507 17:29:44.272" starttime="20140507 17:29:44.232"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:44.272" starttime="20140507 17:29:44.232"></status>
+</kw>
+<kw type="kw" name="resource.Submit Credentials">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>login</arg>
+</arguments>
+<msg timestamp="20140507 17:29:44.273" level="INFO">Clicking button 'login'.</msg>
+<status status="PASS" endtime="20140507 17:29:44.616" starttime="20140507 17:29:44.273"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:44.616" starttime="20140507 17:29:44.272"></status>
+</kw>
+<kw type="kw" name="Login Should Have Failed">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Title Should Be">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Error Page</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+</arguments>
+<msg timestamp="20140507 17:29:44.906" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20140507 17:29:44.906" starttime="20140507 17:29:44.853"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+</arguments>
+<msg timestamp="20140507 17:29:44.958" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20140507 17:29:44.958" starttime="20140507 17:29:44.906"></status>
+</kw>
+<msg timestamp="20140507 17:29:44.958" level="FAIL">UnexpectedAlertPresentException: Message: u'Modal dialog present' ; Stacktrace: 
+    at nsCommandProcessor.prototype.execute (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command_processor.js:10949)
+    at Dispatcher.executeAs/&lt; (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver_component.js:7717)
+    at Resource.prototype.handle (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver_component.js:7864)
+    at Dispatcher.prototype.dispatch (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver_component.js:7811)
+    at WebDriverServer/&lt;.handle (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver_component.js:10740)
+    at createHandlerFunc/&lt; (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1935)
+    at ServerHandler.prototype.handleResponse (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:2261)
+    at Connection.prototype.process (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1168)
+    at RequestReader.prototype._handleResponse (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1616)
+    at RequestReader.prototype._processBody (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1464)
+    at RequestReader.prototype.onInputStreamReady (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1333) </msg>
+<status status="FAIL" endtime="20140507 17:29:44.958" starttime="20140507 17:29:44.617"></status>
+</kw>
+<status status="FAIL" endtime="20140507 17:29:44.959" starttime="20140507 17:29:44.617"></status>
+</kw>
+<status status="FAIL" endtime="20140507 17:29:44.959" starttime="20140507 17:29:44.171"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140507 17:29:44.959" critical="yes" starttime="20140507 17:29:43.950">UnexpectedAlertPresentException: Message: u'Modal dialog present' ; Stacktrace: 
+    at nsCommandProcessor.prototype.execute (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command_processor.js:10949)
+    at Dispatcher.executeAs/&lt; (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver_component.js:7717)
+    at Resource.prototype.handle (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver_component.js:7864)
+    at Dispatcher.prototype.dispatch (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver_component.js:7811)
+    at WebDriverServer/&lt;.handle (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver_component.js:10740)
+    at createHandlerFunc/&lt; (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1935)
+    at ServerHandler.prototype.handleResponse (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:2261)
+    at Connection.prototype.process (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1168)
+    at RequestReader.prototype._handleResponse (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1616)
+    at RequestReader.prototype._processBody (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1464)
+    at RequestReader.prototype.onInputStreamReady (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1333) </status>
+</test>
+<test id="s1-s2-t6" name="Empty Username And Password">
+<kw type="setup" name="resource.Go To Login Page">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Go To">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+</arguments>
+<msg timestamp="20140507 17:29:44.962" level="INFO">Opening url 'http://localhost:9000/'</msg>
+<status status="PASS" endtime="20140507 17:29:45.237" starttime="20140507 17:29:44.962"></status>
+</kw>
+<kw type="kw" name="resource.Login Page Should Be Open">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Title Should Be">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>DirectFN-HTML5</arg>
+</arguments>
+<msg timestamp="20140507 17:29:45.253" level="INFO">Page title is 'DirectFN-HTML5'.</msg>
+<status status="PASS" endtime="20140507 17:29:45.253" starttime="20140507 17:29:45.238"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:45.253" starttime="20140507 17:29:45.237"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:45.253" starttime="20140507 17:29:44.961"></status>
+</kw>
+<kw type="kw" name="Login With Invalid Credentials Should Fail">
+<doc></doc>
+<arguments>
+<arg>${EMPTY}</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<kw type="kw" name="resource.Input Username">
+<doc></doc>
+<arguments>
+<arg>${username}</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>username</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20140507 17:29:45.255" level="INFO">Typing text '' into text field 'username'</msg>
+<status status="PASS" endtime="20140507 17:29:45.299" starttime="20140507 17:29:45.255"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:45.299" starttime="20140507 17:29:45.255"></status>
+</kw>
+<kw type="kw" name="resource.Input Password">
+<doc></doc>
+<arguments>
+<arg>${password}</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>password</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20140507 17:29:45.300" level="INFO">Typing text '' into text field 'password'</msg>
+<status status="PASS" endtime="20140507 17:29:45.339" starttime="20140507 17:29:45.300"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:45.339" starttime="20140507 17:29:45.300"></status>
+</kw>
+<kw type="kw" name="resource.Submit Credentials">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>login</arg>
+</arguments>
+<msg timestamp="20140507 17:29:45.340" level="INFO">Clicking button 'login'.</msg>
+<status status="PASS" endtime="20140507 17:29:45.658" starttime="20140507 17:29:45.340"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:45.658" starttime="20140507 17:29:45.339"></status>
+</kw>
+<kw type="kw" name="Login Should Have Failed">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Title Should Be">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Error Page</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+</arguments>
+<msg timestamp="20140507 17:29:45.987" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20140507 17:29:45.987" starttime="20140507 17:29:45.922"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+</arguments>
+<msg timestamp="20140507 17:29:46.038" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20140507 17:29:46.038" starttime="20140507 17:29:45.987"></status>
+</kw>
+<msg timestamp="20140507 17:29:46.039" level="FAIL">UnexpectedAlertPresentException: Message: u'Modal dialog present' ; Stacktrace: 
+    at nsCommandProcessor.prototype.execute (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command_processor.js:10949)
+    at Dispatcher.executeAs/&lt; (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver_component.js:7717)
+    at Resource.prototype.handle (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver_component.js:7864)
+    at Dispatcher.prototype.dispatch (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver_component.js:7811)
+    at WebDriverServer/&lt;.handle (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver_component.js:10740)
+    at createHandlerFunc/&lt; (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1935)
+    at ServerHandler.prototype.handleResponse (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:2261)
+    at Connection.prototype.process (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1168)
+    at RequestReader.prototype._handleResponse (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1616)
+    at RequestReader.prototype._processBody (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1464)
+    at RequestReader.prototype.onInputStreamReady (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1333) </msg>
+<status status="FAIL" endtime="20140507 17:29:46.039" starttime="20140507 17:29:45.659"></status>
+</kw>
+<status status="FAIL" endtime="20140507 17:29:46.039" starttime="20140507 17:29:45.658"></status>
+</kw>
+<status status="FAIL" endtime="20140507 17:29:46.040" starttime="20140507 17:29:45.254"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140507 17:29:46.040" critical="yes" starttime="20140507 17:29:44.960">UnexpectedAlertPresentException: Message: u'Modal dialog present' ; Stacktrace: 
+    at nsCommandProcessor.prototype.execute (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command_processor.js:10949)
+    at Dispatcher.executeAs/&lt; (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver_component.js:7717)
+    at Resource.prototype.handle (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver_component.js:7864)
+    at Dispatcher.prototype.dispatch (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver_component.js:7811)
+    at WebDriverServer/&lt;.handle (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver_component.js:10740)
+    at createHandlerFunc/&lt; (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1935)
+    at ServerHandler.prototype.handleResponse (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:2261)
+    at Connection.prototype.process (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1168)
+    at RequestReader.prototype._handleResponse (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1616)
+    at RequestReader.prototype._processBody (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1464)
+    at RequestReader.prototype.onInputStreamReady (file:///var/folders/yz/ln1y0qm56rb2mkkl6lhztk7r0000gp/T/tmpKa3HBO/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1333) </status>
+</test>
+<kw type="teardown" name="Selenium2Library.Close Browser">
+<doc>Closes the current browser.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140507 17:29:46.182" starttime="20140507 17:29:46.042"></status>
+</kw>
+<doc>A test suite containing tests related to invalid login.
+
+These tests are data-driven by their nature. They use a single
+keyword, specified with Test Template setting, that is called
+with different arguments to cover different scenarios.
+
+This suite also demonstrates using setups and teardowns in
+different levels.</doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20140507 17:29:46.182" starttime="20140507 17:29:35.650"></status>
+</suite>
+<suite source="/Volumes/Data/DirectFN-MobileWeb/source/DirectFNApp/tests/robot/login_screen/valid_login.txt" id="s1-s3" name="Valid Login">
+<test id="s1-s3-t1" name="Valid Login">
+<kw type="kw" name="resource.Open Browser To Login Page">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20140507 17:29:46.190" level="INFO">Opening browser 'Firefox' to base url 'http://localhost:9000/'</msg>
+<status status="PASS" endtime="20140507 17:29:52.696" starttime="20140507 17:29:46.190"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Maximize Browser Window">
+<doc>Maximizes current browser window.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140507 17:29:53.138" starttime="20140507 17:29:52.697"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Set Selenium Speed">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20140507 17:29:53.139" starttime="20140507 17:29:53.138"></status>
+</kw>
+<kw type="kw" name="resource.Login Page Should Be Open">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Title Should Be">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>DirectFN-HTML5</arg>
+</arguments>
+<msg timestamp="20140507 17:29:53.144" level="INFO">Page title is 'DirectFN-HTML5'.</msg>
+<status status="PASS" endtime="20140507 17:29:53.144" starttime="20140507 17:29:53.139"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:53.144" starttime="20140507 17:29:53.139"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:53.145" starttime="20140507 17:29:46.189"></status>
+</kw>
+<kw type="kw" name="resource.Input Username">
+<doc></doc>
+<arguments>
+<arg>demo</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>username</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20140507 17:29:53.146" level="INFO">Typing text 'demo' into text field 'username'</msg>
+<status status="PASS" endtime="20140507 17:29:53.239" starttime="20140507 17:29:53.146"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:53.239" starttime="20140507 17:29:53.145"></status>
+</kw>
+<kw type="kw" name="resource.Input Password">
+<doc></doc>
+<arguments>
+<arg>mode</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>password</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20140507 17:29:53.240" level="INFO">Typing text 'mode' into text field 'password'</msg>
+<status status="PASS" endtime="20140507 17:29:53.305" starttime="20140507 17:29:53.240"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:53.305" starttime="20140507 17:29:53.240"></status>
+</kw>
+<kw type="kw" name="resource.Submit Credentials">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>login</arg>
+</arguments>
+<msg timestamp="20140507 17:29:53.306" level="INFO">Clicking button 'login'.</msg>
+<status status="PASS" endtime="20140507 17:29:53.381" starttime="20140507 17:29:53.306"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:53.382" starttime="20140507 17:29:53.305"></status>
+</kw>
+<kw type="kw" name="resource.Welcome Page Should Be Open">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Title Should Be">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Market Summary</arg>
+</arguments>
+<msg timestamp="20140507 17:29:53.389" level="INFO">Page title is 'Market Summary'.</msg>
+<status status="PASS" endtime="20140507 17:29:53.389" starttime="20140507 17:29:53.382"></status>
+</kw>
+<status status="PASS" endtime="20140507 17:29:53.389" starttime="20140507 17:29:53.382"></status>
+</kw>
+<kw type="teardown" name="Selenium2Library.Close Browser">
+<doc>Closes the current browser.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140507 17:29:53.427" starttime="20140507 17:29:53.389"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140507 17:29:53.428" critical="yes" starttime="20140507 17:29:46.189"></status>
+</test>
+<doc>A test suite with a single test for valid login.
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20140507 17:29:53.428" starttime="20140507 17:29:46.184"></status>
+</suite>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20140507 17:29:53.430" starttime="20140507 17:29:23.562"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="6" pass="2">Critical Tests</stat>
+<stat fail="6" pass="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="6" pass="2" id="s1" name="Login Screen">Login Screen</stat>
+<stat fail="0" pass="1" id="s1-s1" name="Gherkin Login">Login Screen.Gherkin Login</stat>
+<stat fail="6" pass="0" id="s1-s2" name="Invalid Login">Login Screen.Invalid Login</stat>
+<stat fail="0" pass="1" id="s1-s3" name="Valid Login">Login Screen.Valid Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

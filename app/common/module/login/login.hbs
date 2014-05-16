@@ -1,0 +1,6 @@
+<div class='login_bg'>
+    <li >{{view Ember.TextField valueBinding="controller.username" placeholderBinding="username" autocorrect="off" autocapitalize="off" autocomplete="off" id="username"}}</li>
+    <li>{{view Ember.TextField valueBinding="controller.password" placeholderBinding="password" type="password" id="password"}}</li>
+    <button {{action onLogin}} class='button'>login</button>
+    <button {{action onFreeAccount}} class='button'>Free Account</button>
+</div>
